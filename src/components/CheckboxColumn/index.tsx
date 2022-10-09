@@ -14,15 +14,6 @@ const CheckboxColumn: React.FC<CheckboxColumnProps> = ({
 }) => {
   const colId = uuidv4();
 
-  const handleChange = (e) => {
-    if (e.target.checked) {
-      setRowSelected(true);
-      e.target.checked = true;
-    } else {
-      setRowSelected(false);
-      e.target.checked = false;
-    }
-  };
   return (
     <div
       id={colId}
@@ -30,7 +21,7 @@ const CheckboxColumn: React.FC<CheckboxColumnProps> = ({
       className="checkboxColumn"
       style={{ ...styles.checkboxColumn, width: column.width }}
     >
-      <input type="checkbox" onChange={handleChange} />
+      <input type="checkbox" />
       {children}
     </div>
   );

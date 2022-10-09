@@ -25,7 +25,7 @@ const Row: React.FC<RowProps> = ({
     <div
       id={rowId}
       key={rowId}
-      className={"row " + (rowSelected ? " rowSelected" : " ")}
+      className={"row"}
       style={{ ...styles.row, gridTemplateColumns: getTemplateColums(columns) }}
       onClick={(e) =>
         onRowClicked ? onRowClicked(rowClickParams(row, rowId)) : undefined
