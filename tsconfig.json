@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "target": "ES2017",
+    "lib": ["esnext"],
+    "strict": false,
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowJs": false,
+    "noEmit": false,
+    "moduleResolution": "node"
+  },
+  "include": ["src"]
+}
