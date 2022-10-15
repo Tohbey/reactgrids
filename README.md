@@ -30,7 +30,7 @@ ReactGrid accepts a wide range of compulsory and optional props and events. Each
 | ----------- | -------- | ----------------------------------------------- | ---------------------------------------------------- |
 | columns     | Array    | [{name: "brand", field:"carbrand", width: 120}] | Contains an array of grid column header definitions. |
 | rows        | Array    | [{carbrand: "Mercedes", year: "2022"}]          | Contains an array of grid row data to be rendered.   |
-| onGridReady | Function | (params: GridReadyParams) => //Something        | Contains an array of grid row data to be rendered.   |
+| onGridReady | Function | (params: GridReadyParams) => //Something        | Accepts a handler function as props                  |
 
 ## License
 
