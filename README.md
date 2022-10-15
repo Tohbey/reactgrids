@@ -72,7 +72,10 @@ ReactGrid accepts a wide range of compulsory and optional props and events. Each
 | onRowClicked  | Function | (params: RowClickParams) => //...something      | Accepts a handler function as props                  |
 | onCellClicked | Function | (params: CellClickParams) => //...something     | Accepts a handler function as props                  |
 
+
 ## Custom Cell Renderer
+
+The custom cell renderer allows you to render a customized react component in a column/cell as opposed to rendering ReactGrid's default. The customGenderCellRenderer imported in the below example is a funtion that returns a custom react component.
 
 ```js
 import { ReactGrid } from "@toyesebalogun/reactgrids";

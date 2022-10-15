@@ -1,6 +1,6 @@
 {
   "name": "@toyesebalogun/reactgrids",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Powerful, performance and feature-rich grids for React development.",
   "main": "dist/index.js",
   "files": [
