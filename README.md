@@ -56,12 +56,7 @@ const rows = [
 ];
 
 const App = () => {
-  return (
-    <ReactGrid 
-      columns={columns} 
-      rows={rows} 
-    />
-  );
+  return <ReactGrid columns={columns} rows={rows} />;
 };
 ```
 
@@ -76,6 +71,30 @@ ReactGrid accepts a wide range of compulsory and optional props and events. Each
 | onGridReady   | Function | (params: GridReadyParams) => //...something     | Accepts a handler function as props                  |
 | onRowClicked  | Function | (params: RowClickParams) => //...something      | Accepts a handler function as props                  |
 | onCellClicked | Function | (params: CellClickParams) => //...something     | Accepts a handler function as props                  |
+
+## Custom Cell Renderer
+
+```js
+import { ReactGrid } from "@toyesebalogun/reactgrids";
+import rows from "./rows";
+import { customGenderCellRenderer } from "./custom/cells";
+
+const columns = [
+  { name: "name", field: "name", width: 200 },
+  { name: "email", field: "email", width: 250 },
+  { name: "mobile", field: "phone", width: 140 },
+  {
+    name: "gender",
+    field: "gender",
+    width: 90,
+    colRenderer: customGenderCellRenderer,
+  },
+];
+
+const App = () => {
+  return <ReactGrid columns={columns} rows={rows} />;
+};
+```
 
 ## License
 
