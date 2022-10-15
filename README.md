@@ -12,13 +12,56 @@ npm install @toyesebalogun/reactgrids
 yarn add @toyesebalogun/reactgrids
 ```
 
-## Usage
+## Basic Usage
 
 ```js
 import { ReactGrid } from "@toyesebalogun/reactgrids";
 
+const columns = [
+  { name: "name", field: "name", width: 200 },
+  { name: "email", field: "email", width: 250 },
+  { name: "mobile", field: "phone", width: 140 },
+  { name: "gender", field: "gender", width: 90 },
+];
+
+const rows = [
+  {
+    id: 1,
+    name: "Paulie Brankley",
+    email: "pbrankley0@reference.com",
+    phone: "805-477-8432",
+    gender: "Male",
+  },
+  {
+    id: 2,
+    name: "Roselle Corby",
+    email: "rcorby1@linkedin.com",
+    phone: "153-117-8104",
+    gender: "Female",
+  },
+  {
+    id: 3,
+    name: "Thaine Jurges",
+    email: "tjurges2@edublogs.org",
+    phone: "210-129-7060",
+    gender: "Male",
+  },
+  {
+    id: 4,
+    name: "Susannah Mansford",
+    email: "smansford3@cbc.ca",
+    phone: "980-718-9301",
+    gender: "Female",
+  },
+];
+
 const App = () => {
-  return <ReactGrid columns={[]} data={[]} />;
+  return (
+    <ReactGrid 
+      columns={columns} 
+      rows={rows} 
+    />
+  );
 };
 ```
 
