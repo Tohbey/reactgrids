@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "target": "ES2017",
+    "target": "ES2015",
     "lib": ["esnext"],
-    "strict": false,
+    "strict": true,
     "declaration": true,
     "declarationDir": "dist/types",
     "sourceMap": true,
